@@ -69,7 +69,6 @@ function preencherRelatorio(lista) {
 
 function preencherRelatorio2(lista){
     //console.log("to na funcao");
-
     var dados = [];
     for (i=0;i<lista.length; i++){
         let evento = lista[i];
@@ -77,6 +76,7 @@ function preencherRelatorio2(lista){
         dados.push(eventoAr);
     }
     $("#tabelaRelatorio").DataTable({
+        destroy: true,
         data: dados,
         columns: [
             {title:"#"},
