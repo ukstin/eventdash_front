@@ -77,6 +77,7 @@ function preencherRelatorio2(lista){
     }
     $("#tabelaRelatorio").DataTable({
         destroy: true,
+        order: [[ 1, "asc" ]],
         data: dados,
         columns: [
             {title:"#"},
